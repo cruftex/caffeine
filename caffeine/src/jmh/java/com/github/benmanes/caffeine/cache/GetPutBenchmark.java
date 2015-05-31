@@ -40,14 +40,14 @@ public class GetPutBenchmark {
   private static final int ITEMS = SIZE / 3;
 
   @Param({
-    "LinkedHashMap_Lru",
-    "Caffeine",
-    "ConcurrentLinkedHashMap",
+//    "LinkedHashMap_Lru",
+//    "Caffeine",
+//    "ConcurrentLinkedHashMap",
     "Guava",
-    "Ehcache2_Lru",
-    "Ehcache3_Lru",
-    "Infinispan_Old_Lru",
-    "Infinispan_New_Lru",
+//    "Ehcache2_Lru",
+//    "Ehcache3_Lru",
+//    "Infinispan_Old_Lru",
+//    "Infinispan_New_Lru",
   })
   CacheType cacheType;
 

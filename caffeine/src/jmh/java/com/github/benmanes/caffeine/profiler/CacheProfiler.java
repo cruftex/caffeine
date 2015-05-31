@@ -28,7 +28,7 @@ import com.github.benmanes.caffeine.cache.simulator.generator.ScrambledZipfianGe
  * @author Ben Manes (ben.manes@gmail.com)
  */
 public final class CacheProfiler extends ProfilerHook {
-  static final CacheType cacheType = CacheType.Caffeine;
+  static final CacheType cacheType = CacheType.Guava;
   static final int MAX_SIZE = 2 * NUM_THREADS;
   static final int SIZE = (2 << 14);
   static final int MASK = SIZE - 1;

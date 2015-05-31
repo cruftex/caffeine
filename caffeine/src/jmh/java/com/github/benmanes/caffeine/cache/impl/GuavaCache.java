@@ -15,8 +15,6 @@
  */
 package com.github.benmanes.caffeine.cache.impl;
 
-import static com.github.benmanes.caffeine.cache.CacheType.CONCURRENCY_LEVEL;
-
 import com.github.benmanes.caffeine.cache.BasicCache;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -29,7 +27,7 @@ public final class GuavaCache<K, V> implements BasicCache<K, V> {
 
   public GuavaCache(int maximumSize) {
     cache = CacheBuilder.newBuilder()
-        .concurrencyLevel(CONCURRENCY_LEVEL)
+//        .concurrencyLevel(CONCURRENCY_LEVEL)
         .maximumSize(maximumSize)
         .build();
   }
